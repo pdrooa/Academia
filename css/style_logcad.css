@@ -1,0 +1,168 @@
+/* Resetando alguns estilos padrão para garantir consistência entre os navegadores */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Definindo a fonte e o fundo da página */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  padding: 0;
+  margin: 0;
+}
+
+/* Centraliza a div de login */
+.f {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Estilo do formulário de login */
+.form_log {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+/* Título do formulário */
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Mensagem de erro ou sucesso */
+.mensagem {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  color: red;
+}
+
+/* Estilo dos rótulos dos campos */
+label {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 8px;
+  display: block;
+  font-weight: bold;
+}
+
+/* Estilo dos campos de entrada */
+.input {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  color: #333;
+  background-color: #fafafa;
+  transition: border-color 0.3s;
+}
+
+/* Quando o campo é focado */
+.input:focus {
+  border-color: #3498db;
+  outline: none;
+  background-color: #fff;
+}
+
+/* Botão de submit */
+.botao_log {
+  width: 100%;
+  padding: 12px;
+  background-color: #3498db;
+  color: #fff;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Efeito ao passar o mouse sobre o botão */
+.botao_log:hover {
+  background-color: #2980b9;
+}
+
+/* Link de registro */
+.register {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.register a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.register a:hover {
+  text-decoration: underline;
+}
+
+/* ====================
+RESPONSIVE DESIGN
+==================== */
+
+/* Mobile First Approach */
+
+/* Para telas pequenas (celulares), o formulário será ajustado para caber bem em dispositivos pequenos */
+@media (max-width: 600px) {
+  .form_log {
+      padding: 20px;
+  }
+
+  .input {
+      padding: 10px;
+  }
+
+  .botao_log {
+      font-size: 1rem;
+      padding: 10px;
+  }
+
+  .mensagem {
+      font-size: 0.9rem;
+  }
+}
+
+/* Para tablets e telas médias, ajustando o layout para ter mais espaço */
+@media (max-width: 768px) {
+  .form_log {
+      width: 90%;
+      padding: 25px;
+  }
+
+  .input {
+      padding: 12px;
+  }
+
+  .botao_log {
+      font-size: 1.1rem;
+      padding: 12px;
+  }
+}
+
+/* Para telas grandes (desktops), mantendo o layout mais amplo */
+@media (min-width: 1200px) {
+  .form_log {
+      width: 400px; /* Limita o tamanho máximo */
+      padding: 30px;
+  }
+}
+
+span{
+  color: red;
+}
